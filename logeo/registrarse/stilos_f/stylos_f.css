@@ -1,0 +1,121 @@
+:root{
+    --colortextos:#49454567;
+}
+body {
+    background: #000046;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #1CB5E0, #000046);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #1CB5E0, #000046);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    font-family:Arial, Helvetica, sans-serif;
+    height: 650px;
+    display: flex;
+    justify-content: center ;
+    align-items: center;    
+}
+h1{
+    text-align: center;
+    font-weight: 700;
+    
+
+}
+form{
+    background: #FFFFFF;
+
+    border-radius: 10px;
+    box-shadow: 0 0 6px rgba(255,255,255,0.8);
+    
+}
+.form{
+    width: 100%;
+    margin:auto;
+}
+form .grupo{
+    position: relative;
+    margin: 4px 0;
+
+}
+input{
+    margin-top: 16px;
+    background:none;
+    color:rgb(5, 4, 4);
+    font-size:19px;
+    padding:10px 10px 10px 5px;
+    display: block;
+    widows: 100%;
+    border:none;
+    border-bottom: 1px solid var(--colortextos);
+}
+
+input:focus{
+    outline:none;
+    color :rgb(94,93,93);
+}
+
+label{
+    color:var(--colortextos);
+    font-size:16px;
+    position: absolute;
+    left: 5px;
+    top:10px;
+    transition: 0.5 ease-in-out all;
+    pointer-events: none;
+}
+input:focus ~ label,
+input:valid~label{
+    top:-14px;
+    font-size: 12px;
+    color:#4f44e9;
+}
+.barra{
+    position: relative;
+    display: block;
+    width: 100%;
+}
+.barra::before{
+    content:"";
+    height:2px;
+    width:0;
+    bottom:0;
+    position: absolute;
+    background: linear-gradient(to right, #1CB5E0, #000046);
+    transition: 0.3s ease width;
+    left: 0;
+}
+input:focus~.barra::before{
+    width:100%;
+}
+button{
+    font-family: Arial, Helvetica, sans-serif;
+     /* fallback for old browsers */
+     background: -webkit-linear-gradient(to right, #1CB5E0, #000046);
+     /* Chrome 10-25, Safari 5.1-6 */
+     background: linear-gradient(to right, #1CB5E0, #000046);
+     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+     border:none;
+     width:80%;
+     height:36px;
+     display:block;
+     margin: 10px auto;
+     color: #fff;
+    height: 40px;
+    font-size: 15px;
+    cursor: pointer; ;
+}
+@media screen and (max-width: 500px){
+    form{
+        width:80%;
+        color:rgb(5, 4, 4);
+        margin-top:20px;
+
+    }
+    form .grupo{
+
+        margin: 4px 56px;
+    }
+}
+form .grupo{
+
+    margin: 4px 56px;
+}

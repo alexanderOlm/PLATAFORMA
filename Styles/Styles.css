@@ -1,0 +1,205 @@
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family:Arial, Helvetica, sans-serif;
+    overflow:auto;    
+    
+}
+
+
+/*para poner trasparente*/
+nav{
+    z-index: 2;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    padding: 10px 90px;
+    box-sizing: border-box;
+    background: rgba(0,0,0,.5);
+    border-bottom: 3px solid #fff;
+}
+nav .lojo_laterales{
+    
+    z-index: 2;
+    padding: 25px 20px 0 0;
+    height: 30px;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff;
+    margin:0px 177px 0 0;
+}
+.menu-main ul{
+    float: left;
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+
+justify-content: first baseline;
+}
+
+nav ul li a {
+    line-height: 90px;
+    color: #fff;
+    padding: 12px 30px;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+   
+}
+
+header.sticky{
+    padding: 5px 100px;
+    background:black;
+    border-radius: 1px solid rgba(0,0,0,1);
+}
+header.sticky nav , 
+header.sticky ul li a{
+    color: white;
+    
+    background-color:black; 
+}
+.stycky a:hover{
+    color: red;
+}
+nav ul li a:hover{
+    background: rgba(0,0,0,.5);
+    cursor: pointer;
+}
+li{
+    flex: auto;
+
+}
+/*slider*/
+.slider{
+    width:100% ;
+overflow: hidden;
+}
+.slider ul{
+    display: flex;
+    padding: 0;
+    width: 206%;
+    animation: cambio 15s infinite;
+}
+.slider video{
+    width: 100%;
+}
+.IMAGEN1{
+
+    width:103%;
+    margin: -189px -40px 0 -40px;
+
+}
+.IMAGEN2{
+     
+    width:103%;
+    margin: -105px -40px 0 -40px;
+
+}
+@keyframes cambio{
+    0%{margin-left: 0;}
+    50%{margin-left:0 ;}
+
+    55%{margin-left: -100%;}
+    100%{margin-left: -100%;}
+
+}
+/*logo_medio*/
+.ARTICLE{
+    position: relative;
+    left: 40%;
+     top: -153px;
+    z-index: 1;
+    width: 20%;
+    height: 134px;
+    margin: 0;
+   
+}
+
+
+/*Product*/
+h1{
+    text-align: center;
+}
+.img_pro{
+    width: 200%;
+}
+
+.slider2{
+    margin: auto;
+    overflow: hidden;
+}
+.slider2 ul {
+    display: flex;
+    padding: 0;
+    width: 3500px;
+    animation: cambio2 15s infinite alternate;
+}
+.slider2 li{
+    width: 100%;
+    list-style: none;
+}
+.slider2 img{
+    width: 100%;
+}
+@keyframes cambio2{
+    0%{margin-left: 0;}
+    20%{margin-left:0 ;}
+
+    25%{margin-left: -100%;}
+    45%{margin-left: -100%;}
+}
+/*icon*/
+.contenedor-icon{
+    display: flex;
+}
+.icon {
+    margin: 0 150px 0  ;
+
+    text-align: center;
+    padding: 31px;
+    width: 72px;
+     height: 100px;
+     -moz-border-radius: 50%;
+     -webkit-border-radius: 50%;
+     border-radius: 50%;
+     background:black;
+     font-size: 50px;
+}
+.icon i {
+    margin: 16px 0 18px 0 ;
+    color: #fff;    
+}
+p{
+    text-align: center;
+    font-size: 20px;
+    margin-left: -10px;
+    margin: 50px 0 60px 0 ;
+}
+.pie{
+    background: black;
+}
+footer{
+    display: flex;
+    color: white;
+    margin: 144px 0 0 0;
+    background:black;
+}
+.footer{
+    flex: auto
+}
+.footer1{
+    margin: 23px 0 0 40px;
+}
+.fa-facebook-square , .fa-whatsapp ,
+.fa-instagram{ 
+    margin-left: 50px;
+    font-size: 50px;
+}
+h2{
+    margin: 15px 0 20px 50px;
+}

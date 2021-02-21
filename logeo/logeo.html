@@ -1,0 +1,60 @@
+<?php 
+require_once "conexion_y_validacion/valid.php";
+?>
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ingresa a tu Cuenta </title>
+
+    <link rel="stylesheet" href="stylos/stylos.css">
+</head>
+
+<body>
+    <section>
+
+   
+    <div class="form-container">
+        <h1>
+            Login
+        </h1>
+        <form action="conexion_y_validacion/valid.php" id="formulario" method="POST">
+            <div class="control">
+                <label for="name">Nombre</label>
+                <input type="text" name="name" id="name" required >
+
+       
+          
+                <label for="psw">Contraseña</label>
+                <input type="password" name="pws" id="psw" required >
+
+         
+            <span>
+                <input type="checkbox" id="check">
+                Recordar contraseña .
+            </span>
+          
+                <a href="">
+                    <input type="submit" value="Login" id="button">
+                </a>
+                
+               
+                    <a href="registrarse/registrarse.html">
+                        <input type="button" value="Registrarse" id="registrarse">
+                    </a>
+                    
+                </div>
+                
+
+        </form>
+        
+    </div>
+</section>
+
+
+</body>
+
+</html>

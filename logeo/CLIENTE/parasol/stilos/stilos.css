@@ -1,0 +1,39 @@
+body{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+
+}
+.index{
+    color: aliceblue;
+    text-decoration: none;
+}
+.modificar{
+  
+    color:black;
+    position:absolute; 
+    z-index:3;
+    left:22em; 
+    top:50px; 
+    
+}
+img{
+    margin: 15px 15px;
+}
+.contenedor_imagen{
+    margin-top:100px;
+    text-align: center;
+}
+@media (max-width:1024px){
+    .modificar{
+        color:black;
+        position:absolute; 
+        z-index:3;
+        left:10em; 
+        top:50px; 
+    
+    }
+    img{
+        margin:0;
+    }
+}
