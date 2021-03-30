@@ -117,3 +117,32 @@ section {
     text-align: center;
     font-size: 20px;
 }
+@media only screen and (max-width: 600px){
+
+  
+   .parrafo{
+       width: 700px;
+       
+       
+   }
+   article{
+    padding: 0 50px 0 0;
+
+   }
+   .vision{
+
+   
+    width: 1200px;
+   }
+    .modificar{
+        color:black;
+        position:absolute; 
+        z-index:3;
+        left:10em; 
+        top:50px; 
+    
+    }
+    footer{
+        width: 1446px;
+    }
+}

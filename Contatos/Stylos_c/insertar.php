@@ -9,7 +9,7 @@ $Dirección= $_POST["Dirección"];
 $Email = $_POST["Email"];
 $Asunto = $_POST["Asunto"];
 $Mensaje = $_POST["Mensaje"];
-$insertar = "insert  into usuario (Nombre,Apellido,Telefono,Dirección,Email,Asunto,Mensaje) values
+$insertar = "insert  into CLIENTE (Nombre,Apellido,Telefono,Direccion,Email,Asunto,Mensaje) values
 ('$Nombre','$Apellidos','$telefono','$Dirección','$Email','$Asunto','$Mensaje')";
 
 

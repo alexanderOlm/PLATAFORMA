@@ -1,7 +1,8 @@
 <?php 
 require_once "stylos_c/mysql.php";
-?>
 
+
+?>
 
 <!DOCTYPE html>
 <html lang="es">
@@ -11,7 +12,7 @@ require_once "stylos_c/mysql.php";
     <title>Empresas_auto_lujos _ABC_Prototype </title>
     <link rel="shortcut icon" href="imagenes/favicon.png" />
     <script src="https://kit.fontawesome.com/521dc7195c.js" crossorigin="anonymous"></script>
-     <link rel="stylesheet" href="Stylos_c/stilos.css">
+     <link rel="stylesheet" href="Stylos_c/estilos.css">
 </head>
 <body >
     <header>    
@@ -50,11 +51,11 @@ require_once "stylos_c/mysql.php";
             </nav>     
       
         </header>
-    
-        <form action="Stylos_c/insertar.php" method="post" name="formDatosPersonales">
-
+        
+        <form  method="POST" action="correo/enviar.php"    name="formDatosPersonales">
+        
             <label for="Nombre">Nombre</label>
-            <input type="text" name="Nombre" id="Nombre" placeholder="Escribe tu nombre"/>
+            <input  type="text"  name="Nombre" id="Nombre" placeholder="Escribe tu nombre"/>
         
             <label for="Apellidos">Apellidos</label>
             <input type="text" name="Apellidos" id="Apellidos" placeholder="1r Apellido"/>
@@ -64,10 +65,7 @@ require_once "stylos_c/mysql.php";
 
             <label for="Direccion">Dirección</label>
             <input type="text" name="Dirección" id="Dirección" placeholder="Dirección"/>
- 
-
-           
-
+     
             <label for="Email" />Email</label>
             <input type="Email" name="Email" id="Email" placeholder="Email" />
         
@@ -75,11 +73,10 @@ require_once "stylos_c/mysql.php";
             <input type ="text" name="Asunto" id="Asunto" placeholder="titular de la consulta"/>
         
             <label for="Mensaje">Mensaje</label>
-            <textarea name="Mensaje" for="Mensaje" placeholder="describe brevemente en menos de 300 carácteres" maxlength="300"></textarea>
+            <textarea name="Mensaje" for="Mensaje" placeholder="descripción" maxlength="300" ></textarea>
 
-            <input type="submit" name="Enviar" value="enviar datos"/>
-        </form>
-        
+            <input type="submit" name="Enviar" value="enviar"/>
+        </form>        
 
 
 
@@ -143,4 +140,5 @@ require_once "stylos_c/mysql.php";
 
         
         </body>
+        </html>
         

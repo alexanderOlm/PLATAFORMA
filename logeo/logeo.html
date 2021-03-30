@@ -9,7 +9,7 @@ require_once "conexion_y_validacion/valid.php";
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ingresa a tu Cuenta </title>
-
+  
     <link rel="stylesheet" href="stylos/stylos.css">
 </head>
 
@@ -21,15 +21,15 @@ require_once "conexion_y_validacion/valid.php";
         <h1>
             Login
         </h1>
-        <form action="conexion_y_validacion/valid.php" id="formulario" method="POST">
+        <form action="conexion_y_validacion/valid.php" method="POST" id="formulario" onsubmit="return validar()">
             <div class="control">
                 <label for="name">Nombre</label>
-                <input type="text" name="name" id="name" required >
+                <input type="text" name="name" id="usuario"  >
 
        
           
                 <label for="psw">Contraseña</label>
-                <input type="password" name="pws" id="psw" required >
+                <input type="password" name="pws" id="contraseña"  >
 
          
             <span>
@@ -42,7 +42,7 @@ require_once "conexion_y_validacion/valid.php";
                 </a>
                 
                
-                    <a href="registrarse/registrarse.html">
+                    <a href="registrarse/registrarse.html" target="_blank">
                         <input type="button" value="Registrarse" id="registrarse">
                     </a>
                     
@@ -54,7 +54,7 @@ require_once "conexion_y_validacion/valid.php";
     </div>
 </section>
 
-
+<script src="js/apps.js"> </script>
 </body>
 
 </html>

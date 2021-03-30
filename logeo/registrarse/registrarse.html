@@ -1,3 +1,7 @@
+<?php 
+require_once ("conexion1.php");
+?>
+
 <!DOCTYPE html>
 <html lang="es">
 
@@ -5,72 +9,66 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registrarse</title>
-    <link rel="stylesheet" href="stilos_f/stylos_f.css">
+    <link rel="stylesheet" href="stilos_f/estilos.css">
+
 </head>
-<form action="" method="POST" id="form" ">
-    <div class="form">
-        <h1>
-            Registrate
-
-        </h1>
-        <div class="grupo">
-            <input type="text" name="" id="" required><span class="barra"> </span>
-            <label for="">Nombre</label>
-        </div>
-            <div class="grupo">
-                <input type="text" name="" id="" required><span class="barra"> </span>
-                <label>Apellido</label>
-            </div>
-            
-            <div class="grupo">
-                <input type="text" name="" id="" required><span class="barra"> </span>
-                <label>Direccion</label>
-            </div>
-            <div class="grupo">
-                <input type="text" name="" id="" required><span class="barra"> </span>
-                <label>fecha</label>
-            </div>
-            <div class="grupo">
-                <input type="text" name="" id="" required><span class="barra"> </span>
-                <label>Telefono</label>
-            </div>
-            <div class="grupo">
-
-                <input type="text" name="" id="" required><span class="barra"> </span>
-                <label>Email</label>
-            </div>
-            <div class="grupo">
-                <input type="text" name="" id="" required><span class="barra"> </span>
-                <label>Nombre de usuario</label>
-            </div>
-            <div class="grupo">
-                <input type="text" name="" id="" required><span class="barra"> </span>
-                <label>contraseña</label>
-
-            </div>
-            <button type="submit">
-                Registrarse
-            </button>
-        </div>
-
-
-    </div>
-
-    </div>
-
-</form>
 
 <body>
+    <form action="insertar1.php" method="POST" name="formDatosPersonales" onsubmit="return validar()">
+        <div class="form">
+
+            <h1>
+                Registrate
+
+            </h1>
+            <div class="grupo">
+                <input type="text" name="Nombre" id="nombre"   ><span class="barra"> </span>
+                <label for="Nombre">Nombre</label>
+            </div>
+ <!-- Aquí puedes escribir tu comentario -->           <div class="grupo">
+                <input type="text" name="Apellido" id="Apellidos"  ><span class="barra"> </span>
+                <label for="Apellido" type="text">Apellido</label>
+            </div>
+            <div class="grupo">
+                <input type="text" name="Direccion" id="Direccion"  ><span class="barra"> </span>
+                <label for="Direccion" type="text">Direccion</label>
+            </div>
+            <div class="grupo">
+                <input type="text" name="Fecha" id="Fecha" > </span>
+                <label for="Fecha" type="text">fecha</label>
+            </div>
+            <div class="grupo">
+                <input type="text" name="Telefono" id="Telefono" ><span class="barra"  > </span>
+                <label for="Telefono" type="text">Telefono</label>
+            </div>
+            <div class="grupo">
+                <input type="text" name="Email" id="Email" required><span class="barra"  > </span>
+                <label for="Email" type="text" required>Email</label>
+            </div>
+            <div class="grupo">
+                <input type="text" name="Usuario" id="Usuario" ><span class="barra"  > </span>
+                <label for="Usuario" type="text">Nombre de usuario</label>
+            </div>
+            <div class="grupo">
+
+                <input type="text" name="Clave" id="clave" ><span class="barra"  > </span>
+                <label for="clave" type="text">Clave Usuario</label>
+            </div>
+        </div>
+        <input class="boton" type="submit" name="Enviar" value="enviar datos" />
+
+
+        </div>
+
+        </div>
+
+    </form>
 
 
 
 
-
-
-
-
-   
 
 </body>
+<script src="js/app2.js"> </script>
 
 </html>

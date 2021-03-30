@@ -3,14 +3,14 @@
 $usuario = $_POST['name'];
 $contraseñas= $_POST['pws'];
 //conexion
-$Mysqli=new mysqli("localhost","desarrollo","15092010DE","empresa_scar_tunnig");
+$mysqli =new mysqli("localhost","desarrollo","15092010DE","empresa_scar_tunnig");
 
 if(mysqli_connect_errno()){
     printf("conexion fallida", mysqli_connect_errno());
 }
 // selecion de clave 
-$consulta="select * from cuenta where Nombre='$usuario' and  contraseña='$contraseñas'";
-$resultados =mysqli_query($Mysqli, $consulta);
+$consulta="select * from CLIENTE_USUARIO  where Usuario='$usuario' and  Clave='$contraseñas'";
+$resultados=mysqli_query($mysqli,$consulta);
 
 $filas=mysqli_num_rows($resultados);
 
@@ -21,4 +21,6 @@ else{
     echo "su usario o contraseña es incorreta ";
 }
 mysqli_free_result($resultados);
-mysqli_close($Mysqli);
+mysqli_close($mysqli);
+
+

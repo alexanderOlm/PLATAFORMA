@@ -1,0 +1,364 @@
+body{
+    font-family: arial;
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar{
+    position: absolute;
+    width:250px;
+    height:100%;
+    background: #333;
+    color: #fff;
+    outline: 1px solid #2a2a2a;
+    transition: border 0.2s;
+
+}
+.sidebar h1{
+    text-align: center;
+    margin: 0;
+    padding: 10;
+    background: #2a2a2a;;
+}
+.sidebar ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.sidebar li{
+    outline: 1px solid  #2a2a2a;
+    transition: border 0.2s;
+}
+.sidebar li:hover{
+    background:#444;
+    border-left: 5px solid #eee;
+}
+.sidebar a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    padding:10px;
+    font-size:25px;
+}
+
+.contenedor{
+    width:100%;
+    height:100%;
+    position:absolute;
+    background: #eee;
+    padding: 30px;
+    box-sizing: content-box;
+    
+}
+.fa-align-justify{
+    cursor: pointer;
+    font-size:50px;
+}
+.abrir{
+    transform: translateX(250px);
+}
+/*formulario insertar*/
+.insertar{
+    position:absolute;
+     z-index:0;
+     top:50px;
+    left:20em;
+}
+
+.container-add{
+    width:90%;
+    margin: 50px auto;
+}
+
+.container-title{
+    margin: 0;
+    padding: 10px;
+    background: rgba(14, 85, 179, 0.959);
+    color:#eee;
+    font-size:1.9em;
+    text-align: center;
+}
+.container-form{
+    background: rgb(248, 248, 248);
+    box-shadow:0 0 20px #333;
+    padding:20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+label{
+    font-size:1.3em;
+    width:20%;
+    text-align:center;
+}
+
+.input{
+    width:25%;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    font-size:1em;
+    padding:5px;
+}
+
+.submit{
+    background:rgba(14, 85, 179, 0.959); 
+    color:white ;
+    border: none;
+    padding:10px;
+    margin: 15px auto;
+    width:100px;
+    font-size:1.1em ;
+    cursor: pointer;
+}
+
+
+.linea{
+    position:absolute;
+    z-index:0;
+    top:500px;
+   left:16em;
+   background-color:rgba(0,0,255,6);
+}
+/*formulario2*/
+.insertar_2{
+    position:absolute;
+     z-index:0;
+     top:500px;
+    left:20em;
+}
+
+.container-add_2{
+    width:90%;
+    margin: 50px auto;
+}
+
+.container-title_2{
+    margin: 0;
+    padding: 10px;
+    background: rgba(233, 42, 42, 0.959);
+    color:#eee;
+    font-size:1.9em;
+    text-align: center;
+}
+.container-form_2{
+    background: rgb(248, 248, 248);
+    box-shadow:0 0 20px #333;
+    padding:20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+label{
+    font-size:1.3em;
+    width:20%;
+    text-align:center;
+}
+
+.input_2{
+    width:25%;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    font-size:1em;
+    padding:5px;
+}
+
+.submit_2{
+    background:rgba(179,14, 28, 0.959); 
+    color:white ;
+    border: none;
+    padding:10px;
+    margin: 15px auto;
+    width:100px;
+    font-size:1.1em ;
+    cursor: pointer;
+}
+
+
+.linea_2{
+    position:absolute;
+    z-index:0;
+    top:950px;
+   left:16em;
+   background-color:rgba(255,0,0,1);
+}
+/*formulario3*/
+.insertar_3{
+    position:absolute;
+     z-index:0;
+     top:1000px;
+    left:20em;
+}
+
+.container-add_3{
+    width:90%;
+    margin: 50px auto;
+}
+
+.container-title_3{
+    margin: 0;
+    padding: 10px;
+    background: rgb(204, 190,0,0.959);
+    color:#eee;
+    font-size:1.9em;
+    text-align: center;
+}
+.container-form_3{
+    background: rgb(248, 248, 248);
+    box-shadow:0 0 20px #333;
+    padding:20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+label{
+    font-size:1.3em;
+    width:20%;
+    text-align:center;
+}
+
+.input_3{
+    width:25%;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    font-size:1em;
+    padding:5px;
+}
+
+.submit_3{
+    background:rgb(204, 190,0,0.959); 
+    color:white ;
+    border: none;
+    padding:10px;
+    margin: 15px auto;
+    width:100px;
+    font-size:1.1em ;
+    cursor: pointer;
+}
+
+
+.linea_3{
+    position:absolute;
+    z-index:0;
+    top:500px;
+   left:-6em;
+   background-color:rgb(204, 190,0,0.959); 
+}
+/*FORMULARIO4*/
+.insertar_4{
+    position:absolute;
+     z-index:0;
+     top:1600px;
+    left:20em;
+}
+
+.container-add_4{
+    width:90%;
+    margin: 50px auto;
+}
+
+.container-title_4{
+    margin: 0;
+    padding: 10px;
+    background: rgba(106,121,247,1);
+    color:#eee;
+    font-size:1.9em;
+    text-align: center;
+}
+.container-form_4{
+    background: rgb(248, 248, 248);
+    box-shadow:0 0 20px #333;
+    padding:20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+label{
+    font-size:1.3em;
+    width:20%;
+    text-align:center;
+}
+
+.input_4{
+    width:25%;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    font-size:1em;
+    padding:5px;
+}
+
+.submit_4{
+    background:rgba(106,121,247,1); 
+    color:white ;
+    border: none;
+    padding:10px;
+    margin: 15px auto;
+    width:100px;
+    font-size:1.1em ;
+    cursor: pointer;
+}
+
+
+.linea_4{
+    position:absolute;
+    z-index:0;
+    top:2000px;
+   left:16em;
+   background-color:rgba(106,121,247,1);; 
+}
+/*formulario5*/
+.insertar_5{
+    position:absolute;
+     z-index:0;
+     top:2100px;
+    left:20em;
+}
+
+.container-add_5{
+    width:90%;
+    margin: 50px auto;
+}
+
+.container-title_5{
+    margin: 0;
+    padding: 10px;
+    background: rgb(106, 226, 247);
+    color:#eee;
+    font-size:1.9em;
+    text-align: center;
+}
+.container-form_5{
+    background: rgb(248, 248, 248);
+    box-shadow:0 0 20px #333;
+    padding:20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+label{
+    font-size:1.3em;
+    width:20%;
+    text-align:center;
+}
+
+.input_5{
+    width:25%;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    font-size:1em;
+    padding:5px;
+}
+
+.submit_5{
+    background:rgb(106, 226, 247); 
+    color:white ;
+    border: none;
+    padding:10px;
+    margin: 15px auto;
+    width:100px;
+    font-size:1.1em ;
+    cursor: pointer;
+}
+
+
+.linea_5{
+    position:absolute;
+    z-index:0;
+    top:2000px;
+   left:16em;
+   background-color:rgb(106, 226, 247); 
+}
