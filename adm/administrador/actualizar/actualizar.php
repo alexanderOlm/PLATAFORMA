@@ -52,6 +52,9 @@ $Proveedor = "select * from proveedores";
                         <li class="li_sub">
                             <a href="proveedor/actualizar.php">Proveedor</a>
                         </li>
+                         <li>
+                <a href="../adminstrador.php"> Inicio &nbsp;&nbsp <i class="fas fa-fast-backward"></i></a>
+            </li>
                       
                     </ul>
             
@@ -59,6 +62,7 @@ $Proveedor = "select * from proveedores";
             <li>
                 <a href="../eliminar/eliminar.php"> Borrar &nbsp;&nbsp;<i class="fas fa-trash-alt"></i></a>
             </li>
+            
         </ul>
 
 

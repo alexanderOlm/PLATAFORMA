@@ -12,7 +12,7 @@ require_once "php/conexion.php";
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Administrador Insertar</title>
     <script src="https://kit.fontawesome.com/521dc7195c.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="estilos/stylos.css" >
+    <link rel="stylesheet" href="estilos/estulos.css" >
     <script src="https://code.jquery.com/jquery-3.6.0.js"
         integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
 
@@ -39,7 +39,9 @@ require_once "php/conexion.php";
                 <a href="eliminar/eliminar.php"> Borrar &nbsp;&nbsp;<i class="fas fa-trash-alt"></i></a>
             </li>
 
-
+            <li>
+                <a href="../../index.html">salir &nbsp;&nbsp;<i class="fas fa-fast-backward"></i></a>
+            </li>
         </ul>
     </div>
     <div class="contenedor">

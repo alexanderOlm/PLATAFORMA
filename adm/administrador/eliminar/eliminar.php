@@ -55,8 +55,14 @@ $Proveedor = "select * from proveedores";
                         <li class="li_sub">
                             <a href="proveedor/eliminar.php">Proveedor</a>
                         </li>
+                         <li>
+                <a href="../adminstrador.php"> Inicio &nbsp;&nbsp <i class="fas fa-fast-backward"></i></a>
+            </li>
                       
                     </ul>
+            </li>
+             <li>
+                <a href="../adminstrador.php"> Inicio &nbsp;&nbsp <i class="fas fa-fast-backward"></i></a>
             </li>
         </ul>
 

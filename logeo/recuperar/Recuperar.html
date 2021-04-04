@@ -1,0 +1,81 @@
+<?php 
+require_once "conexion1.php";
+?>
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ingresa a tu Cuenta </title>
+  <link rel="stylesheet" href="stilos/estilos.css">
+     
+</head>
+
+<body>
+    <section>
+
+   
+    <div class="form-container">
+        <h1>
+            Recuperar Usuario
+        </h1>
+        <h3>
+            Ingrese sus usuario antiguo
+        </h3>
+        <form action="insertar1.php" method="POST" id="formulario" onsubmit="return validar()">
+            <div class="control">
+                <label for="name">Nombre</label>
+                <input type="text" name="name" id="usuario"  >
+
+       
+          
+                <label for="psw">Apellido</label>
+                <input type="text" name="apellido" id="contraseña"  >
+
+                <label for="psw">Correo</label>
+                <input type="email" name="Correo" id="contraseña"  >
+
+                <label for="name">Usuario</label>
+                <input type="text" name="name" id="usuario"  >
+
+
+                <label for="psw">Contraseña</label>
+                <input type="password" name="pws" id="contraseña"  >
+
+                <h3>
+                    Ingrese su nuevo usuario y contraseña
+                </h3>  
+                <div class="control">
+                    <label for="name">Nombre</label>
+                    <input type="text" name="N_name" id="usuario"  >
+    
+           
+              
+                    <label for="psw">Contraseña</label>
+                    <input type="password" name="N_pws" id="contraseña"  >
+                    
+                   
+                        <input type="submit" value="Recuperar Cuenta" id="registrarse">
+                    
+          
+              
+                    
+                   
+                    <a href="../index.html" target="_blank">
+                        <input type="button" value="salir" id="salir>
+                    </a>
+                    
+                </div>
+                
+
+        </form>
+        
+    </div>
+</section>
+
+<script src="js/apps.js"> </script>
+</body>
+
+</html>

@@ -51,7 +51,9 @@ require_once ("conexion2.php");
                     <a href="../moquetas y varios/moquetas_y_varios.php">Moquetas y varios</a>
                 </li>
 
-
+                 <li>
+                    <a href="../../../index.html">Moquetas y varios</a>
+                </li>
             </ul>
 
         </div>

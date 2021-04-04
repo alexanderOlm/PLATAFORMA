@@ -49,7 +49,7 @@ $Proveedor = "select * from proveedores";
                             <a href="proveedor/proveedor.php">Proveedor</a>
                         </li>
                         <li>
-                <a href="../../adminstrador.php"> Inicio<i class="fas fa-fast-backward"></i></a>
+                <a href="../adminstrador.php"> Inicio &nbsp;&nbsp <i class="fas fa-fast-backward"></i></a>
             </li>
                       
                     </ul>
